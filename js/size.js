@@ -3,22 +3,22 @@
 		t.body ? t.body.style.fontSize = 12 * o + "px" : t.addEventListener("DOMContentLoaded", n);
 	}
 	function d() {
-		var e = (i.clientWidth > 920 ? 920 : i.clientWidth) / 10,
-			h = i.clientHeight,
-			rat = i.clientHeight/i.clientWidth;
+		var e = (i.clientWidth > 920 ? 920 : i.clientWidth) / 10;
 		i.style.fontSize = e + "px";
+		
+	}
+	var i = t.documentElement,
+		o = e.devicePixelRatio || 1,
+		h = i.clientHeight,
+		rat = i.clientHeight/i.clientWidth;
+	if (n(), d(), e.addEventListener("resize", d), e.addEventListener("pageshow", function(e) {
+		e.persisted && d();
 		i.style.height = h +"px";
 		alert(rat)
 		if(rat<1.7){
 			i.classList.add("other");
 			i.style.height = 'auto';
 		}
-	}
-	var i = t.documentElement,
-		o = e.devicePixelRatio || 1;
-	if (n(), d(), e.addEventListener("resize", d), e.addEventListener("pageshow", function(e) {
-		e.persisted && d();
-		
 	}), o >= 2) {
 		var a = t.createElement("body"),
 			s = t.createElement("div");
