@@ -1,23 +1,24 @@
 !function(e, t) {
 	function n() {
-		t.body ? t.body.style.fontSize = 12 * o + "px" : t.addEventListener("DOMContentLoaded", n)
+		t.body ? t.body.style.fontSize = 12 * o + "px" : t.addEventListener("DOMContentLoaded", n);
 	}
 	function d() {
 		var e = (i.clientWidth > 920 ? 920 : i.clientWidth) / 10,
-			h = i.clientHeight;
+			h = i.clientHeight,
+			rat = i.clientHeight/i.clientWidth;
 		i.style.fontSize = e + "px";
 		i.style.height = h +"px";
-	}
-	var i = t.documentElement,
-		o = e.devicePixelRatio || 1,
-		rat = i.clientHeight/i.clientWidth;
-	if (n(), d(), e.addEventListener("resize", d), e.addEventListener("pageshow", function(e) {
-		e.persisted && d();
 		alert(rat)
 		if(rat<1.7){
 			i.classList.add("other");
 			i.style.height = 'auto';
 		}
+	}
+	var i = t.documentElement,
+		o = e.devicePixelRatio || 1;
+	if (n(), d(), e.addEventListener("resize", d), e.addEventListener("pageshow", function(e) {
+		e.persisted && d();
+		
 	}), o >= 2) {
 		var a = t.createElement("body"),
 			s = t.createElement("div");
