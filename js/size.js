@@ -5,7 +5,6 @@
 	function d() {
 		var e = (i.clientWidth > 920 ? 920 : i.clientWidth) / 10;
 		i.style.fontSize = e + "px";
-		
 	}
 	var i = t.documentElement,
 		o = e.devicePixelRatio || 1,
@@ -14,7 +13,7 @@
 	if (n(), d(), e.addEventListener("resize", d), e.addEventListener("pageshow", function(e) {
 		e.persisted && d();
 		i.style.height = h +"px";
-		alert(rat)
+		console.log(rat)
 		if(rat<1.7){
 			i.classList.add("other");
 			i.style.height = 'auto';
