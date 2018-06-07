@@ -1,0 +1,28 @@
+@charset "utf-8";
+html{ overflow-y:scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 37.5px;}
+html,body,div,ul,li,p,img,input{ padding:0; margin:0;}
+body{height: 100%; color:#fff; background-image:linear-gradient(#8532DE 10%, #5322B9 100%); font-family:Helvetica,"Microsoft YaHei","PingFangSC-Regular",Arial,sans-serif; font-size: 24px;background-size: 100% 100%;}
+a{ -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;outline: none;  text-decoration: none}
+ul,li{ list-style:none; }
+img{ border:none;display: block }
+
+.wrap{width:100%;height:100%;background:url(../images/bot.png) no-repeat bottom;background-size: 100%;position: relative;min-width:320px;max-width: 920px;margin: 0 auto}
+.girl{margin: 0 auto}
+.group{width: 70%;margin: 0 auto;position:relative}
+.msg{display: block;width:100%;height: .5rem;text-indent:1em;color: #fff;top: -.56rem;position: absolute;font-size: .3rem}
+input{width:100%;height: .85rem;border-radius: .15rem;border:none;outline: none;margin-bottom: .5rem;text-indent: 1em;box-shadow: 0 .04rem .03rem #391675;font-size: .3rem;vertical-align: top}
+.btn{height:.85rem;line-height:.88rem;font-size: .45rem;background: linear-gradient(to right,#F3338F 0%,#B237D1 100%);border-radius: .15rem;text-align: center;box-shadow: 0 .04rem .03rem #862CC1;letter-spacing: .1rem}
+.other .btn{margin-bottom: 2rem;}
+
+#result-body{background: #fff}
+.result{width:100%;height: 100%;background: #fff;min-width:320px;max-width: 920px;margin: 0 auto}
+.result-info{position: relative;padding-bottom: 4.8rem;background:url(../images/bott.png) no-repeat bottom;background-size: cover}
+.result-bg{position: absolute;z-index: 9;top: .3rem}
+.hb{position: relative;width: 84%;left: 0;right: 0;margin: auto;top: 3.2rem;}
+#result-hb{position: absolute;top: 0;left: 0}
+.result-btn{text-align: center;background:#fff;padding-bottom: .5rem;}
+.result-btn a{display: inline-block;width: 4.1rem;height: .9rem;line-height: .97rem;background: linear-gradient(to right,#F3338F 0%,#B237D1 100%);border-radius: .15rem;box-shadow: 0 .04rem .03rem #F49CC6;color: #fff;font-size: .4rem;margin-top: .45rem;margin-bottom: .7rem;letter-spacing: .08rem}
+.result-btn span{display: block;color: #8030da;font-size: .3rem;letter-spacing: .22rem;position: relative;max-width: 920px;margin: 0 auto}
+.result-btn span:after,.result-btn span:before{width: 27%;height: .03rem;content: "";display: block;position: absolute;top: .22rem}
+.result-btn span:before{background: linear-gradient(to right,#7346D0 0%,#F7F4FC 100%);right: 0}
+.result-btn span:after{background: linear-gradient(to left,#7346D0 0%,#F7F4FC 100%);left: 0}
