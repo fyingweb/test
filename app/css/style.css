@@ -18,7 +18,7 @@ header{height: 4rem;background: url(../images/bg.png) no-repeat;background-size:
 .menu-right{background-image: url(../images/menu-right.png);right: .5rem}
 .user-info{overflow: hidden; height: 2.7rem;padding-top: .5rem;}
 .avar,.info{float: left;}
-.avar{width: 2rem;height: 2rem;overflow: hidden;border-radius: 50%;background: #fff;border: .08rem solid rgba(255,255,255,.2);background-clip: padding-box;margin-left: 1rem;margin-right: .5rem;}
+.avar{width: 2rem;height: 2rem;overflow: hidden;border-radius: 50%;background: #fff;border: .09rem solid rgba(255,255,255,.2);background-clip: padding-box;margin-left: 1rem;margin-right: .5rem;}
 .avar img{width: 100%}
 .info{font-size: .29333rem;position: relative;padding-top: .4rem;width: 6rem}
 .info span{display: inline-block;border: .03rem solid #fff;border-radius: .18rem;padding: 0 .15rem;height: .38rem;line-height: .4rem;margin-right: .2rem;}
