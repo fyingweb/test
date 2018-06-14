@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>我的-多宝贷</title> 
+<meta name="description" content="多宝贷">
+<meta name="keywords" content="多宝贷">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/size.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header>
+			<div class="head-menu">
+				<i class="menu-left"></i>
+				<i class="menu-right"></i>
+			</div>
+			<div class="user-info">
+				<div class="avar">
+					<img src="images/user.png">
+				</div>
+				<div class="info">
+					<p class="user-name">1861****7657</p>
+					<span>已实名</span>
+					<span>已开通存管</span>
+					<a href="#" class="info-more"></a>
+				</div>
+			</div>
+		</header>
+		<section>
+			<ul class="user-amount">
+				<li>
+					<span>账户总额(元)</span>
+					<p>564454.12</p>
+				</li>
+				<li class="amount-c">
+					<span>待收本息(元)</span>
+					<p>55556.3</p>
+				</li>
+				<li>
+					<span>可用余额(元)</span>
+					<p>115546.6</p>
+				</li>
+			</ul>
+			<div class="btn-group">
+				<a href="#" class="btn-cz"><i></i>充值</a>
+				<a href="#" class="btn-tx"><i></i>提现</a>
+			</div>
+			<p class="tips">您尚未开通新网银行资金管理，资金更安全，马上开通。<i class="close">╳</i></p>
+			<ul class="menu-list">
+				<li>
+					<a href="#">
+						<img src="images/icon-jyjl.png">
+						交易记录
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icon-ytxm.png">
+						已投项目
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icon-hkjh.png">
+						回款计划
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icon-wdhb.png">
+						我的红包
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icon-zdtb.png">
+						自动投标
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/icon-cyj.png">
+						创业家
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img src="images/icon-tyj.png">
+					体验金
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img src="images/icon-dxb.png">
+					定向标
+					</a>
+				</li>
+				<li>
+					<a href="#">
+					<img src="images/icon-hfzh.png">
+					汇付账户
+					</a>
+				</li>
+			</ul>
+			<span class="safe-msg">新网银行为您提供资金存管服务，保障您的资金安全</span>
+		</section>
+		<nav>
+			<a href="#"><i class="nav-home"></i>首页</a>
+			<a href="#"><i class="nav-tz"></i>投资</a>
+			<a href="javascript:;" class="active"><i class="nav-my"></i>我的</a>
+			<a href="#"><i class="nav-wkt"></i>微课堂</a>
+			<a href="#"><i class="nav-more"></i>更多</a>
+		</nav>
+	</div>
+	<script type="text/javascript">
+	window.onload = function(){
+		var close = document.querySelector('.close');
+		close.onclick = function(){
+			this.parentNode.style.display = 'none'
+		}
+	}
+	</script>
+</body>
+</html>
