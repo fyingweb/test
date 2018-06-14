@@ -1,6 +1,6 @@
 @charset "utf-8";
 html{ overflow-y:scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; font-size: 37.5px;}
-html,body,div,ul,li,p,img,h4{ padding:0; margin:0;}
+html,body,div,ul,li,p,img,h4,section,nav{ padding:0; margin:0;}
 body{ color:#fff; background:#fff; font-family:Helvetica,"Microsoft YaHei",Verdana,Arial,sans-serif; font-size: 24px;height: 100%}
 a{ -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;outline: none;  text-decoration: none}
 ul,li{ list-style:none; }
@@ -9,7 +9,7 @@ i{font-style: normal;}
 
 .wrap,.mark,nav{width: 100%;min-width: 320px;max-width: 920px;margin: 0 auto}
 .wrap{height:100%;background: #eeeff3;}
-.wrap section{text-align: center;padding-bottom: 1.6rem;background: #eeeff3;}
+.wrap section{text-align: center;padding-bottom: 1.4rem;background: #eeeff3;}
 
 header{height: 4rem;background: url(../images/bg.png) no-repeat;background-size: cover;}
 .head-menu{height: .8rem;position: relative;}
