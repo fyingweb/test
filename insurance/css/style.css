@@ -9,7 +9,7 @@ button,img{ -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-co
 .item{width: 74%;height:.6rem;margin: 0 auto .6rem;background: #fff;border-radius: 1rem;overflow: hidden;border: .08rem solid rgba(255,255,255,.5);background-clip: padding-box;padding: .2rem 0;font-size: 0}
 .item label{z-index: 99;color: #949494;padding-left: .5rem;}
 .item input{border:none;}
-.item input,.item label{display: inline-block;height: .6rem; line-height: .65rem;font-size: .34rem;}
+.item input,.item label{display: inline-block;height: .6rem; line-height: .7rem;font-size: .34rem;}
 .group button{width: 5rem;height: 1.8rem;line-height: 1.8rem;background: url(../images/btn.png) no-repeat;background-size: 100% 100%;color: #fff;font-weight: bold;font-size: .56rem;margin: -.2rem auto;letter-spacing: .1rem}
 
 .mark,.mark p{top: 0;bottom: 0;left: 0;right: 0}
