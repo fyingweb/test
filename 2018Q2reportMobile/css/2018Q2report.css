@@ -36,7 +36,7 @@ a{text-decoration:none;}
 .data-container h2{font-size:0.28rem;line-height:0.8rem;padding-left: .2rem;;color:#fff;background: linear-gradient(#536BFC 0%, #5838FE 100%)}
 .menu-btn{position:absolute;width:0.41rem;height:.35rem;top: .24rem;right: .25rem;z-index:99;display: block;background: url(../images/menu.png) no-repeat;background-size: 100%}
 .logo{width: 1.2rem;position: absolute;left: 5%;top: 2%}
-.data-container-bottom-img{position:absolute;width:45%;right: 5%;bottom: 2%;height: 2.8rem;max-height:22%;background:url(../images/xb.png) right no-repeat;background-size:contain;z-index:988;}
+.data-container-bottom-img{position:absolute;width:45%;right: 5%;bottom: 1%;height: 2.6rem;max-height:20%;background:url(../images/xb.png) right no-repeat;background-size:contain;z-index:988;}
 
 .part1-ul{font-size: 0}
 .part1-ul li{display: inline-block;width: 45%;color: #777;border-bottom: 1px solid #d8d8d8;padding: 1.4rem 0 .1rem 5%;position: relative;}
