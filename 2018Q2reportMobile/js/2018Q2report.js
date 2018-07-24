@@ -29,7 +29,7 @@ $(function () {
 
     $menuList.on('click', 'li', function () {
         var $this = $(this);
-        var dataIdxArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+        var dataIdxArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
         var dataIdx = dataIdxArr[$this.index()];
         $this.addClass('menu-active').siblings('li').removeClass('menu-active');
         data.slideTo(dataIdx, 300, false);
@@ -57,7 +57,7 @@ $(function () {
         },
         on: {
             slideChangeTransitionStart: function () {
-                var partIdxArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+                var partIdxArr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
                 var partIdx = partIdxArr[this.activeIndex];
                 $menuList.find('li').eq(partIdx).addClass('menu-active').siblings('li').removeClass('menu-active');
                 if (this.isEnd) {
