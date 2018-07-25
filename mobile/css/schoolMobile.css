@@ -15,11 +15,11 @@ img{border:none;width:100%;}
 .swiper-pagination-custom span{display:inline-block;margin:0 0.133333rem;width:0.12rem;height:0.12rem;background:rgba(255,255,255,0.5);cursor:pointer;}
 .swiper-pagination-custom span.swiper-page-active{width:0.11rem;height:0.20rem;transform: skew(-30deg,15deg);background-color: #fff;margin-bottom: -.025rem;}
 .swiper-button-next, .swiper-button-prev{width: .46rem;height: .46rem;background-size: cover;margin-top: -.3rem}
-.swiper-button-prev{background-image: url(../images/swiper-larr.png);left: .4rem}
-.swiper-button-next{background-image: url(../images/swiper-rarr.png);right: .4rem}
+.swiper-button-prev{background-image: url(../images/swiper-larr.png);left: .35rem}
+.swiper-button-next{background-image: url(../images/swiper-rarr.png);right: .35rem}
 .school-main{width:100%;min-height:3.12rem;background:url("../images/main-bg.png") no-repeat center top;background-size:contain;overflow:hidden;}
 .school-container{width:94%;padding:.56rem .16rem 0;margin:.37333rem auto .6rem;background:#fff;border-top-left-radius:0.64rem;border-top-right-radius:0.64rem;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;border: 1px solid #e9e9e9}
-.school-nav li{float:left;margin:0 3.6%;width:17.8%;border-bottom:0.053333rem solid #fff;}
+.school-nav li{float:left;margin:0 3.6%;width:17.8%;border-bottom:0.08rem solid #fff;}
 .school-nav .nav-active span{text-decoration:underline}
 .school-nav .nav-active.nav-item1{border-color:#ff002e;}
 .school-nav .nav-active.nav-item1 span{color:#ff002e;}
@@ -54,10 +54,10 @@ img{border:none;width:100%;}
 .video-pagination{width:100%;font-size:0;margin: .24rem 0 .64rem -.16rem;}
 .video-pagination li{display:inline-block;margin:0 0.16rem;overflow: hidden;}
 .video-pagination li a{display:block;font-size:0.306667rem;width:0.72rem;height: .72rem;line-height:.74667rem;text-align:center;border-radius:0.053333rem;border:1px solid #bfbfbf;color:#bfbfbf;}
-.hairlines .video-pagination li a{border:0.5px solid #bfbfbf;}
+.hairlines .video-pagination li a{border:1px solid #bfbfbf;}
 .video-pagination li a.pagination-active{color:#fff;background:#fece01;border-color:#fece01;}
 .page-btn{width: .16rem;height: .16rem;background-repeat: no-repeat;background-position: center .25rem}
 .first,.last{background-image: url(../images/sarr.png);background-size: .2rem;}
 .prev,.next{background-image: url(../images/darr.png);background-size: .13rem}
-.first,.prev{transform: rotate(180deg);background-position: center .24rem}
+.first,.prev{transform: rotate(180deg);}
 
