@@ -53,11 +53,11 @@ img{border:none;width:100%;}
 .video-info em{font-style:normal;vertical-align:top;}
 .video-pagination{width:100%;font-size:0;margin: .24rem 0 .64rem -.16rem;}
 .video-pagination li{display:inline-block;margin:0 0.16rem;}
-.video-pagination li a{display:block;font-size:0.306667rem;width:0.72rem;height: .72rem;line-height:.74667rem;text-align:center;border-radius:0.053333rem;border:1px solid #bfbfbf;color:#bfbfbf;overflow: hidden;}
-.hairlines .video-pagination li a{border:1px solid #bfbfbf;}
+.video-pagination li a{display:block;font-size:0.306667rem;width:0.72rem;height: .72rem;line-height:.75rem;text-align:center;border-radius:0.053333rem;border:1px solid #bfbfbf;color:#bfbfbf;overflow: hidden;}
+.hairlines .video-pagination li a{border:.5px solid #bfbfbf;}
 .video-pagination li a.pagination-active{color:#fff;background:#fece01;border-color:#fece01;}
 .page-btn{width: .16rem;height: .16rem;background-repeat: no-repeat;background-position: center .25rem}
 .first,.last{background-image: url(../images/sarr.png);background-size: .22rem;}
-.prev,.next{background-image: url(../images/darr.png);background-size: .15rem}
+.prev,.next{background-image: url(../images/darr.png);background-size: .13rem}
 .first,.prev{transform: rotate(180deg);}
 
