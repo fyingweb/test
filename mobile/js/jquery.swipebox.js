@@ -682,11 +682,11 @@
 
 				if ( ! $this.isVideo( src ) ) {
 					slide.addClass( 'slide-loading' );
-					$this.loadMedia( src, function() {
+					$this.loadMedia( src, index, function() {
 						slide.removeClass( 'slide-loading' );
 						slide.html( this );
-						// slide.append('<div class="swipebox-group"><a href="'+src+'" download="picture" class="down-img"></a><a class="swipebox-close"></a></div>');
-						slide.append('<div class="swipebox-group"><a class="down-img" onclick="downloadIamge(\'img\', \''+src+'\')" ontouchend="downloadIamge(\'img\', \''+src+'\')"></a><a class="swipebox-close"></a></div>');
+						
+						slide.append('<div class="swipebox-group"><a class="down-img" onclick="downloadIamge(\'.img_'+index+'\', \''+src+'\')" ontouchend="downloadIamge(\'.img_'+index+'\', \''+src+'\')"></a><a class="swipebox-close"></a></div>');
 					} );
 				} else {
 					slide.html( $this.getVideo( src ) );
@@ -764,13 +764,14 @@
 			/**
 			 * Load image
 			 */
-			loadMedia : function ( src, callback ) {
+			loadMedia : function ( src, index, callback ) {
 				if ( ! this.isVideo( src ) ) {
 					var img = $( '<img>' ).on( 'load', function() {
 						callback.call( img );
 					} );
 
 					img.attr( 'src', src );
+					img.addClass('img_'+index);
 				}
 			},
 
