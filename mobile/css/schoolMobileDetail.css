@@ -41,7 +41,7 @@ a{text-decoration:none;}
 .full-text{font-style: normal;color: #a76f00;}
 .detail-text-hide{display: none}
 .back-home{margin:0.426667rem auto 0;display:block;width:4rem;}
-.back-home i{display:block;margin:0 auto;width:0.8rem;height:0.8rem;background:url("../images/back-home-icon.png");background-size:cover;}
+.back-home i{display:block;margin:0 auto;width:0.8rem;height:0.8rem;background:url("../images/back-home-icon.png");background-size:contain;}
 .back-home p{margin-top:0.266667rem;font-size:0.32rem;line-height:0.32rem;color:#a76f00;text-align:center;}
 .comment-form{margin-top:0.533333rem;}
 .comment-form input{float:left;padding:0.15rem;width:78%;font-size:0.32rem;line-height:0.426667rem;border:1px solid #ccc;-webkit-box-sizing:border-box;box-sizing:border-box;outline:none;}

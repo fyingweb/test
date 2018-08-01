@@ -686,8 +686,11 @@
 						slide.removeClass( 'slide-loading' );
 						slide.html( this );
 						slide.append('<div class="swipebox-group"><a href="" download="picture" class="down-img"></a><a class="swipebox-close"></a></div>');
-						slideImg = slide.find('a');
+						slideImg = slide.find('a.down-img');
 						slideImg.attr('href', 'https://fyingweb.github.io/test/mobile/'+src);
+						$('body').on('touchend', '.down-img', function(){
+							alert('aa')
+						})
 					} );
 				} else {
 					slide.html( $this.getVideo( src ) );

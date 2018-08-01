@@ -27,6 +27,7 @@ $(function(){
     /*picture*/
     new Swiper('.video-controler .swiper-container', {
         autoHeight: true,
+        passiveListeners: false,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
