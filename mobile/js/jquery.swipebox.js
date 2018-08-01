@@ -687,7 +687,7 @@
 						slide.html( this );
 						slide.append('<div class="swipebox-group"><a href="" download="picture" class="down-img"></a><a class="swipebox-close"></a></div>');
 						slideImg = slide.find('a');
-						slideImg.attr('href', src);
+						slideImg.attr('href', 'https://fyingweb.github.io/test/mobile/'+src);
 					} );
 				} else {
 					slide.html( $this.getVideo( src ) );
