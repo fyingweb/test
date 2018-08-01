@@ -27,7 +27,6 @@ $(function(){
     /*picture*/
     new Swiper('.video-controler .swiper-container', {
         autoHeight: true,
-        passiveListeners: false,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -138,4 +137,18 @@ function getTime(){
         D = date.getDate(),
         Day = D > 9 ? D : '0'+D;
     return date.getFullYear()+'-'+Mon+'-'+Day;
+}
+
+function downloadIamge(selector, name) {  
+    // 通过选择器获取img元素，  
+    var img = document.querySelector(selector)  
+    // 将图片的src属性作为URL地址  
+    var url = img.src  
+    var a = document.createElement('a')  
+    var event = new MouseEvent('click')  
+      
+    a.download = name || '下载图片名称'  
+    a.href = url  
+      
+    a.dispatchEvent(event)  
 }

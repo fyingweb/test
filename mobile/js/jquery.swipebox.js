@@ -685,11 +685,10 @@
 					$this.loadMedia( src, function() {
 						slide.removeClass( 'slide-loading' );
 						slide.html( this );
-						slide.append('<div class="swipebox-group"><a href="" download="picture" class="down-img"></a><a class="swipebox-close"></a></div>');
-						slideImg = slide.find('a.down-img');
-						slideImg.attr('href', 'https://fyingweb.github.io/test/mobile/'+src);
+						slide.append('<div class="swipebox-group"><a href="'+src+'" download="picture" class="down-img"></a><a class="swipebox-close"></a></div>');
+		
 						$('body').on('touchend', '.down-img', function(){
-							alert('aa')
+							alert('aa');
 						})
 					} );
 				} else {
