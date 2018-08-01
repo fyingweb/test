@@ -10,6 +10,7 @@
 	<meta name="format-detection" content="email=no">
 	<script type="text/javascript" src="js/flexible.js"></script>
     <link href="https://cdn.bootcss.com/Swiper/4.2.2/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/jquery.swipebox/1.4.4/css/swipebox.min.css">
     <link rel="stylesheet" href="css/schoolMobileDetail.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
 					<img src="images/school-banner.jpg">
 				</a>
 				<a class="swiper-slide" href="#">
-					<img src="images/video-cover.jpg">
+					<img src="images/school-banner.jpg">
 				</a>
 				<a class="swiper-slide" href="#">
 					<img src="images/school-banner.jpg">
@@ -32,9 +33,22 @@
 	<div class="school-detail">
 		<h1>标题标题标题标题标题</h1>
 		<div class="detail-container">
-			<div class="video-controler" onclick="replaceVideo('https://www.duobaodai.com/static/about-us-video.mp4')" id="video-box">
-				<div class="video-detail-masker"></div>
-				<img src="images/video-dcover.png">
+			<div class="video-controler">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<a class="swiper-slide swipebox" href="images/video-dcover.png" >
+							<img src="images/video-dcover.png" alt="image">
+						</a>
+						<a class="swiper-slide swipebox" href="images/video-cover.jpg" >
+							<img src="images/video-cover.jpg" alt="image">
+						</a>
+						<a class="swiper-slide swipebox" href="images/video-dcover.png" >
+							<img src="images/video-dcover.png" alt="image">
+						</a>
+					</div>
+					<div class="swiper-button-prev"></div>
+   					<div class="swiper-button-next"></div>
+				</div>
 			</div>
 			<div class="video-info clearfix">
 				<span class="fl">2018-02-28</span>
@@ -49,7 +63,7 @@
 			</div>
 			<p class="detail-text-hide">《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及，《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及，《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及，《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及，《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及</p>
             <p class="detail-text">《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及，《合同法》第196条规定：借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的合法性投资人及借贷之间的借贷关系的法性投资人及<em class="full-text">[全文]</em></p>
-			<a class="back-home" href="index-video.html">
+			<a class="back-home" href="index-picture.html">
 				<i></i>
 				<p>返回首页观看更多精彩视频</p>
 			</a>
@@ -141,6 +155,16 @@
 	</div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://cdn.bootcss.com/Swiper/4.2.2/js/swiper.min.js"></script>
+	<!-- <script src="https://cdn.bootcss.com/jquery.swipebox/1.4.4/js/jquery.swipebox.min.js"></script> -->
+	<script src="js/jquery.swipebox.js"></script>
 	<script src="js/detailM.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		 $( '.swipebox' ).swipebox({
+        	useSVG: false,
+        	hideCloseButtonOnMobile: true
+    	});
+	})
+	</script>
 </body>
 </html>
