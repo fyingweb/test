@@ -120,7 +120,6 @@ $(function(){
     		}
     	})
     });
-
 });
 
 function replaceVideo(url){

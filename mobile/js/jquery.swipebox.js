@@ -685,11 +685,8 @@
 					$this.loadMedia( src, function() {
 						slide.removeClass( 'slide-loading' );
 						slide.html( this );
-						slide.append('<div class="swipebox-group"><a href="'+src+'" download="picture" class="down-img"></a><a class="swipebox-close"></a></div>');
-		
-						$('body').on('touchend', '.down-img', function(){
-							alert('aa');
-						})
+						// slide.append('<div class="swipebox-group"><a href="'+src+'" download="picture" class="down-img"></a><a class="swipebox-close"></a></div>');
+						slide.append('<div class="swipebox-group"><a class="down-img" onclick="downloadIamge(\'img\', \''+src+'\')" ontouchend="downloadIamge(\'img\', \''+src+'\')"></a><a class="swipebox-close"></a></div>');
 					} );
 				} else {
 					slide.html( $this.getVideo( src ) );
