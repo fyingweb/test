@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>画•献给母亲</title> 
+<meta name="description" content="这是我献给母亲的一幅画，祝天下母亲节日快乐">
+<meta name="keywords" content="画•献给母亲">
+<link rel="stylesheet" type="text/css" href="css/style.css?v1.1.0">
+<script src="https://cdn.bootcss.com/zepto/1.1.4/zepto.min.js"></script>
+<script src="js/size.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <header>
+		<span class="back-btn" id="back">撤销</span>
+		<ul class="pen" id="pen">
+			<li class="pen-6 active"></li>
+			<li class="pen-5"></li>
+			<li class="pen-4"></li>
+			<li class="pen-3"></li>
+			<li class="pen-2"></li>
+			<li class="pen-1"></li>
+		</ul>
+		<span class="save-btn" id="save">提交</span>
+    </header>
+    <canvas id="draw" width="375" height="400"></canvas>
+    <div class="sc-mark"><p>图片生成中…</p></div>
+    <footer>
+		<nav class="color-btn" id="color">
+			<span class="active"><i class="c-qing"></i></span>
+			<span><i class="c-lv"></i></span>
+			<span><i class="c-lan"></i></span>
+			<span><i class="c-zi"></i></span>
+			<span><i class="c-hong"></i></span>
+			<span><i class="c-huang"></i></span>
+			<span><i class="c-bai"></i></span>
+			<span><i class="c-hei"></i></span>
+		</nav>
+		<a href="https://www.duobaodai.com/mobile/reg">
+			<img src="images/bottom1.png" width="100%">
+		</a>
+   </footer>
+</div>
+
+<script src="js/tuya.js"></script>
+<script>
+window.onload = function(){
+
+    var ty = new tuya({
+        Base64ck:function (data) {
+            // console.log(data)
+        }
+    });
+    // console.log(ty)  
+}
+</script>
+</body>
+</html>
