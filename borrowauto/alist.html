@@ -1,0 +1,566 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Expires" CONTENT="-1">
+    <meta http-equiv="Cache-Control" CONTENT="no-cache">
+    <meta http-equiv="Pragma" CONTENT="no-cache">
+    <title>自动投标-用户中心</title>
+    <script src="http://xinet.duobaodai.com/static/mobile/js/jquery.min.js"></script>
+    <script src="https://lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.js"></script>
+    <script src="https://lib.sinaapp.com/js/jquery-ui/1.10.2/jquery-ui.min.js"></script>
+
+
+    <script type="text/javascript" src="http://xinet.duobaodai.com/static/js/Validform_v5.3.2_min.js"></script>
+    <script type="text/javascript" src="http://xinet.duobaodai.com/static/js/formCheck.js"></script>
+    <script type="text/javascript" src="http://xinet.duobaodai.com/static/js/My97DatePicker/WdatePicker.js"></script>
+    <script src="http://xinet.duobaodai.com/static/artDialog/artDialog.js"></script>
+    <script src="http://xinet.duobaodai.com/static/artDialog/iframeTools.js"></script>
+    <script src="http://xinet.duobaodai.com/static/js/dbd.js"></script>
+    <script src="http://xinet.duobaodai.com/static/js/scroll.js"></script>
+    <link href="http://xinet.duobaodai.com/static/artDialog/skins/default.css" rel="stylesheet" type="text/css"/>
+    <link href="http://xinet.duobaodai.com/static/mobile/css/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <script src="http://xinet.duobaodai.com/static/js/jquery.form.js"></script>
+    <script src="http://xinet.duobaodai.com/static/mobile/js/media.js"></script>
+    <script src="handsome.js"></script>
+    <script src="http://xinet.duobaodai.com/static/mobile/js/main.js"></script>
+    <style type="text/css">
+        #checkboxSwitch {-webkit-appearance: checkbox;}
+    </style>
+    <link rel="stylesheet" href="http://xinet.duobaodai.com/static/new/css/popup.css">
+</head>
+<body>
+<div class="sunn_wrapper">
+    <div id="sunn_main">
+
+        <section class="header">
+            <div class="logo mcomed-logo"><a href="http://www.mcomed.cn.com/"><img
+                            src="http://xinet.duobaodai.com/static/mobile/images/icon/mcomed-logo.png"></a></div>
+            <div class="line"></div>
+            <div class="logo"><a href="/mobile"><img src="http://xinet.duobaodai.com/static/mobile/images/icon/logo.png"></a></div>
+            <div class="usr">
+                <ul>
+                    <!-- <li><a href="#">安全退出</a></li> -->
+                    <!-- 已登录 -->
+
+                    <li class="first"><a
+                                href="/mobile/ucenter/index.html">余额￥964,947.64</a>
+                    </li>
+                    <li><a href="/mobile/recharge/rec.html">充值</a></li>
+                    <!-- 我的账户 -->
+
+                    <!-- <li class="first"><a href="#">注册</a></li>
+                    <li><a href="#">登录</a></li> -->
+                    <!-- 未登录 -->
+                </ul>
+            </div>
+        </section>
+        <!-- 头部 -->
+
+
+        <section class="content">
+            <div class="user">
+                <div class="ublock08">
+                    <form id="borrowautoForm" name="borrowautoForm">
+
+                        <div class="row clearfix">
+                            <div class="wl">自动投标功能：</div>
+                            <div class="wr">
+                                <p class="left" style="color:#990000">关闭</p>                            </div>
+                        </div>
+                        <input type="hidden" id="status" name="status" value="1">
+                        <input type="hidden" name="id" value="139">
+                        <div class="row clearfix">
+                            <div class="wl">可用金额：</div>
+                            <div class="wr">￥964947.64</div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="wl selectdown">每次投标金额：</div>
+                            <div class="wr" id="wrbid">
+                                <select class="select" id="tender_type" name="tender_type" tabindex="1">
+                                    <option value="3"
+                                            >
+                                        固定余额
+                                    </option>
+                                    <option value="2"
+                                            >
+                                        最大金额
+                                    </option>
+                                    <option value="1"
+                                            selected="selected">
+                                        按照余额
+                                    </option>
+                                </select>
+
+                                                            </div>
+                        </div>
+
+                        <div class="row clearfix" id="wrbid-input" style="display:block;">
+                            <div class="wl"></div>
+                            <div class="wr">
+                                <div class="input">
+                                    <input id="tender_account" name="tender_account"
+                                           value="0.00" type="text"
+                                           placeholder="请输入金额(元)"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="wl"></div>
+                            <div class="wr" id="wrbid-hint">
+                                <div class="hint" id="label_left"
+                                     style="border:1px solid #51c977;color:#51c977;background:none">
+                                    填写保留金额,不会加入自动投标                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <div class="wl">还款方式：</div>
+                                                            <div class="wr">
+                                    <div class="wr-check"><input name="b_style[]" type="checkbox" class="checkbox"
+                                                                 value="0" checked="checked" /></div>
+                                    <span>等额本息</span></div>
+                                                            <div class="wr">
+                                    <div class="wr-check"><input name="b_style[]" type="checkbox" class="checkbox"
+                                                                 value="2" checked="checked" /></div>
+                                    <span>一次性还本付息</span></div>
+                                                            <div class="wr">
+                                    <div class="wr-check"><input name="b_style[]" type="checkbox" class="checkbox"
+                                                                 value="3" checked="checked" /></div>
+                                    <span>每月付息到期还本</span></div>
+                                                    </div>
+
+                        <div class="row clearfix zindex10" style="z-index: 11">
+                            <div class="wl selectdown">期限不小于：</div>
+                            <div class="wr">
+                                <select class="select" id="limit_status_first" name="limit_status_first" tabindex="1">
+                                                                            <option value="1"
+                                                >1个月</option>
+                                                                            <option value="2"
+                                                >2个月</option>
+                                                                            <option value="3"
+                                                >3个月</option>
+                                                                            <option value="4"
+                                                >4个月</option>
+                                                                            <option value="5"
+                                                >5个月</option>
+                                                                            <option value="6"
+                                                >6个月</option>
+                                                                            <option value="7"
+                                                >7个月</option>
+                                                                            <option value="8"
+                                                >8个月</option>
+                                                                            <option value="9"
+                                                >9个月</option>
+                                                                            <option value="10"
+                                                >10个月</option>
+                                                                            <option value="11"
+                                                >11个月</option>
+                                                                            <option value="12"
+                                                >12个月</option>
+                                                                            <option value="18"
+                                                >18个月</option>
+                                                                            <option value="24"
+                                                >24个月</option>
+                                                                            <option value="36"
+                                                >36个月</option>
+                                                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix zindex10">
+                            <div class="wl selectdown">期限不大于：</div>
+                            <div class="wr">
+                                <select class="select" id="limit_status" name="limit_status" tabindex="1">
+                                                                            <option value="1"
+                                                >1个月</option>
+                                                                            <option value="2"
+                                                >2个月</option>
+                                                                            <option value="3"
+                                                >3个月</option>
+                                                                            <option value="4"
+                                                >4个月</option>
+                                                                            <option value="5"
+                                                >5个月</option>
+                                                                            <option value="6"
+                                                >6个月</option>
+                                                                            <option value="7"
+                                                >7个月</option>
+                                                                            <option value="8"
+                                                >8个月</option>
+                                                                            <option value="9"
+                                                >9个月</option>
+                                                                            <option value="10"
+                                                >10个月</option>
+                                                                            <option value="11"
+                                                >11个月</option>
+                                                                            <option value="12"
+                                                selected="selected">12个月</option>
+                                                                            <option value="18"
+                                                >18个月</option>
+                                                                            <option value="24"
+                                                >24个月</option>
+                                                                            <option value="36"
+                                                >36个月</option>
+                                                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix zindex9">
+                            <div class="wl selectdown">利率不小于：</div>
+                            <div class="wr">
+                                <select class="select" id="apr_last" name="apr_last" tabindex="1">
+                                                                            <option value="6"
+                                                selected="selected">6                                            %
+                                        </option>
+                                                                            <option value="7"
+                                                >7                                            %
+                                        </option>
+                                                                            <option value="8"
+                                                >8                                            %
+                                        </option>
+                                                                            <option value="9"
+                                                >9                                            %
+                                        </option>
+                                                                            <option value="10"
+                                                >10                                            %
+                                        </option>
+                                                                            <option value="11"
+                                                >11                                            %
+                                        </option>
+                                                                            <option value="12"
+                                                >12                                            %
+                                        </option>
+                                                                            <option value="13"
+                                                >13                                            %
+                                        </option>
+                                                                            <option value="14"
+                                                >14                                            %
+                                        </option>
+                                                                            <option value="15"
+                                                >15                                            %
+                                        </option>
+                                                                            <option value="16"
+                                                >16                                            %
+                                        </option>
+                                                                            <option value="17"
+                                                >17                                            %
+                                        </option>
+                                                                            <option value="18"
+                                                >18                                            %
+                                        </option>
+                                                                            <option value="19"
+                                                >19                                            %
+                                        </option>
+                                                                            <option value="20"
+                                                >20                                            %
+                                        </option>
+                                                                            <option value="21"
+                                                >21                                            %
+                                        </option>
+                                                                            <option value="22"
+                                                >22                                            %
+                                        </option>
+                                                                            <option value="23"
+                                                >23                                            %
+                                        </option>
+                                                                    </select>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix zindex8">
+                            <div class="wl selectdown">开始日期：</div>
+                            <div class="wr">
+                                <div class="input">
+                                    <input id="valid_start_time" name="valid_start_time"
+                                           value="2018-08-28"
+                                           onfocus="WdatePicker()" readonly="readonly" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix zindex7">
+                            <div class="wl selectdown">结束日期：</div>
+                            <div class="wr">
+                                <div class="input">
+                                    <input id="valid_end_time" name="valid_end_time"
+                                           value="2019-08-28"
+                                           onfocus="WdatePicker()" readonly="readonly" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="font-size: 1em; margin: 0.4em 0;">
+                            <input id="checkboxSwitch" name="" type="checkbox" value="" checked>
+                            <!--                            <label for="checkboxSwitch">我已阅读并同意<a href="/tzxy/index">《投资人须知》</a><a href="/riskdisclosure">《风险揭示书》</a><a href="/tzxy/auto">《自动投标须知》</a></label>-->
+                            <label for="checkboxSwitch">我已阅读并同意<a href="/tzxy/auto">《自动投标须知》</a></label>
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                                            <input class="submit" type="button" onclick="borrowautoSubmit()"
+                                       value="开启">
+                                                        </span>
+                        </div>
+                        <!-- <div class="submit deep-blue-bg"><span>修改</span></div> -->
+                    </form>
+                    <!--
+						<form id="myform" method="post" action="/mobile/borrowauto/plan.html" style="width:44%;position:absolute;top:74%;right:2%">
+							<input type="hidden" name="ad" value="2">
+							<input class="submit" type="submit" value="关闭" style="display:none;">
+
+						</form>
+						-->
+                    <div class="row-noblock"></div>
+
+                </div>
+        </section>
+        <!-- content -->
+        <div id="dialog" title="系统提示" style="display:none"><p id="msg" style="text-align:center"></p></div>
+        <div class="yt-plan-poptips-wrap" style="display: none;">
+            <div class="yt-plan-poptips-box">
+                <i class="poptips__close-btn"></i>
+                <div class="poptips__logo"><img src="http://xinet.duobaodai.com/static/new/images/yt-plant-poptips-logo-group.png"></div>
+                <p id="sqcontent"></p>
+                <a href="" id="sqbtn"></a>
+                <span>多宝贷已接入新网银行资金存管</span>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            $('.poptips__close-btn').on('click', function() {
+                $('.yt-plan-poptips-wrap').fadeOut('fast');
+            })
+            function borrowautoSubmit() {
+                var options = {
+                    url: '/mobile/borrowauto/add/',
+                    beforeSubmit: checkForm,
+                    dataType: "json",
+                    type: "post",
+                    success: function (ret) {
+                        if (ret.msg == '') {
+                            if (ret.jump == 1) {
+                                art.dialog({
+                                    title: '系统提示',
+                                    content: '修改成功',
+                                    ok: function () {
+                                        location = ret.url;
+                                    }
+                                });
+                            } else {
+                                location = ret.url;
+                            }
+                            $("#msg").html("下一步:跳转到汇付开启");
+                        } else {
+                            alert(ret.msg);
+                        }
+                    }
+                };
+                $("#borrowautoForm").ajaxSubmit(options);
+                return false;
+            }
+
+            function checkForm() {
+                var err = '';
+                var account = '';
+                var failtime = '20200731';
+                var sqamount = '10000000';
+                var today = '20180828';
+                var tenMoney = $('#tender_account').val();
+
+                if ((failtime < today) || (failtime==0)) {
+
+                    $('#sqcontent').text('自动投标设置失败。您需要开通授权投标，才可以进行优投项目投资、自动投标等操作。');
+                    $('#sqbtn').text('立即开通');
+                    $('#sqbtn').attr('href','/mobile/xwsend/user_authorization/INVESTOR');
+                    $('.yt-plan-poptips-wrap').fadeIn(100);
+                    return false;
+                } else if (sqamount < parseFloat(tenMoney)) {
+                    $('#sqcontent').text('自动投标设置失败。您的授权投标金额为'+sqamount+'元，请重新授权或修改投资金额');
+                    $('#sqbtn').text('重新授权');
+                    $('#sqbtn').attr('href','/mobile/xwsend/user_authorization/INVESTOR');
+                    $('.yt-plan-poptips-wrap').fadeIn(100);
+                    return false;
+                }
+
+                if ($('#tender_type').val() == 1) {
+
+                }
+
+                if ($('#tender_type').val() == 2) {
+                    if ($('#tender_account').val() < 50) {
+                        alert('最少投资金额最小50');
+                        return false;
+                    } else if ($('#tender_account').val() > 10000000) {
+                        alert('最大投资金额最大1000万');
+                        return false;
+                    }
+                    account = $('#tender_account').val();
+                    if (account == "" || account == "0") {
+                        account = "0.00";
+                    }
+                    if (!account.match(/^(?:0\.\d{1,2}|(?!0)\d+(?:\.\d{1,2})?)$/)) {
+                        alert('金额格式不正确');
+                        return false;
+                    }
+//		if(($('#tender_account').val()) % 100 !=0){
+//			alert('必须是100的倍数');
+//			return false;
+//		}
+                }
+                if ($('#valid_start_time').val() == "") {
+                    err = '请填写有效开始日期';
+                    return false;
+                }
+
+                if ($('#valid_end_time').val() == "") {
+                    err = '请填写有效结束日期';
+                    return false;
+                }
+
+                var objList = document.getElementsByName("b_style[]");
+                var s = '';
+                for (var i = 0; i < objList.length; i++) {
+                    if (objList[i].checked)
+                        s += objList[i].value + ',';
+                }
+                if (s == "") {
+                    // err = '必须保留一个还款方式';
+                    alert('必须保留一个还款方式');
+                }
+                if (err == '') {
+                    return true;
+                } else {
+                    $('#dialog').dialog({
+                        modal: true, //蒙层（弹出会影响页面大小）
+                        title: '系统提示',
+                        buttons: {
+                            "确定": function () {
+                                $(this).dialog("close");
+                            }
+                        }
+                    });
+                    $("#msg").html(err);
+                    return false;
+                }
+            }
+
+            function jump() {
+                window.location.href = "/mobile/borrowauto/plan.html?ad=2";
+
+            }
+        </script>
+
+<section class="bottom-nav">
+    <ul id="footerNav">
+        <li>
+            <a  class="active" href="/mobile/welcome/index?rand=265706845">
+                <div class="icon home"></div>
+                <div class="word">首页</div>
+            </a>
+        </li>
+        <li>
+            <a href="/mobile/borrow/index.html?rand=1402743783">
+                <div class="icon burse"></div>
+                <div class="word">投资</div>
+            </a>
+        </li>
+        <li>
+            <a href="/mobile/ucenter/index.html">
+                <div class="icon account"></div>
+                <div class="word">我的</div>
+            </a>
+        </li>
+        <li>
+            <a href="/mobile/site/aboutss">
+                <div class="icon aboutus"></div>
+                <div class="word">更多</div>
+            </a>
+        </li>
+    </ul>
+</section>
+<div class="bottom-block"></div>
+<!-- bottom-nav -->
+
+</div>
+</div>
+<!-- <script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['setCustomVariable', '2','username','']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//www.duobaodai.com/piwik/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+    $.cookie = function(name, value, options) {
+        if (typeof value != 'undefined') { // name and value given, set cookie
+            options = options || {};
+            if (value === null) {
+                value = '';
+                options.expires = -1;
+            }
+            var expires = '';
+            if (options.expires && (typeof options.expires == 'number' || options.expires.toUTCString)) {
+                var date;
+                if (typeof options.expires == 'number') {
+                    date = new Date();
+                    date.setTime(date.getTime() + (options.expires * 24 * 60 * 60 * 1000));
+                } else {
+                    date = options.expires;
+                }
+                expires = '; expires=' + date.toUTCString(); // use expires attribute, max-age is not supported by IE
+            }
+            var path = options.path ? '; path=' + options.path : '';
+            var domain = options.domain ? '; domain=' + options.domain : '';
+            var secure = options.secure ? '; secure' : '';
+            document.cookie = [name, '=', encodeURIComponent(value), expires, path, domain, secure].join('');
+        } else { // only name given, get cookie
+            var cookieValue = null;
+            if (document.cookie && document.cookie != '') {
+                var cookies = document.cookie.split(';');
+                for (var i = 0; i < cookies.length; i++) {
+                    var cookie = jQuery.trim(cookies[i]);
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    };
+    $(function(){
+        var date = new Date();
+        try    {
+            if(date.getMonth()+1 === 4 && date.getDate() === 1){
+                var count = 1;
+                var tc = +$.cookie("dbd20150401");
+                if(tc==1){
+                }else{
+                }
+            }
+        } catch (e) {
+        }
+    });
+</script> -->
+<script type="text/javascript" src="http://xinet.duobaodai.com/static/mobile/js/footnav.js"></script>
+<noscript><p><img src="//www.duobaodai.com/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+
+</body>
+</html>
