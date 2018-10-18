@@ -68,5 +68,5 @@ nav a{width: 25%;display: inline-block;font-size: .375rem;}
 .mark{width: 100%;left: 0;right: 0;top: 0;bottom: 0;position: fixed;background: rgba(0,0,0,.4);z-index: 9998;display: none;}
 .wx-box{width: 4.4rem;position: fixed;top:25%;left: 0;right: 0;margin: auto;padding: .4rem;background: #fff;display: none;z-index: 9999;}
 .wx-box img{width: 100%;margin-bottom: .3rem;}
-.wx-box p{font-size: .36rem;text-align: center;line-height: 1.5}
+.wx-box p{font-size: .36rem;text-align: center;line-height: 1.5;color: #333}
 .wx-box span{color: #537cfb;}
