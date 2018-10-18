@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+html{ overflow-y:scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body,div,dl,dt,dd,ul,li,h3,h4,p,img,section,article{ padding:0; margin:0; }
+body{ color:#fff; font-family:Helvetica,"Microsoft YaHei",Verdana,Arial,sans-serif,"Times New Roman",'宋体'; }
+a{ -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;outline: none; text-decoration: none;color: #fff}
+dl,ul,li{ list-style:none; }
+img{ border:0; display: block;}
+h3,h4{ font-weight:normal; }
+i{ font-style: normal; }
+
+.wrap{max-width: 920px;margin: 0 auto;background: #223231;padding: 2.18rem 0 2.1875rem;}
+.wrap section{position: relative;}
+header{position:fixed;top:0;left:0;right:0;margin: auto;max-width:920px;background: #0d1716;z-index: 999;}
+.head{padding: .2rem;}
+.head img{height: 1rem;display: inline-block;}
+.head p{font-size: .3rem;color: #fff;line-height: 1.1rem;height: 1rem;text-align: right;float: right;padding-right: .2rem;}
+.head p span{color: #f8fb04;padding-left: .1rem;}
+nav{font-size: 0;height: 1.18rem;background: #0f3936;text-align: center;line-height: 1.2rem;}
+nav a{width: 25%;display: inline-block;font-size: .375rem;}
+
+.title{text-align: center;padding: .35rem 0 .7rem;position: relative;background: #223231}
+.title:after{content:"";display: block;position: absolute;bottom: .5rem;left:0;right:0;margin:auto;width: 1rem;height: .05rem;background: #f1ee1e}
+.title h3{font-size: .5625rem;color: #fff;}
+.title p{font-size: .21875rem;color: #046d65;}
+
+.links{background: #0d1716;padding: .2rem 0;}
+.links p{font-size: .34375rem;padding-left: 1.2rem;line-height: 2}
+.links a{color: #fffa1d}
+.links span{display: inline-block;color: #fffa1d}
+
+.article{padding: .3rem .2rem 0}
+.article h4,.two-match dt{font-size: .40625rem;font-weight: bold;margin-bottom: .2rem;position: relative;text-indent: .28rem}
+.article h4:after,.two-match dt:after{content: "";display: block;position: absolute;top: 50%;left: .03rem;width: .07rem;height: .3rem;background: #fffa1d;margin-top: -.13rem;}
+.article p,.article article{font-size: .375rem;text-indent: 2em;line-height: 1.7;text-align: justify;margin-bottom: .3rem;}
+
+.part-two{background: #223231;padding-bottom: .2rem;}
+.match-img img,.part-three img{margin-bottom: .5rem;}
+
+.two-match dl{padding: .3rem}
+.two-match dd{line-height: 2;font-size: .34375rem;position: relative;text-indent: .3rem}
+.two-match dd:after{content: "•";display: block;position: absolute;color: #fffa1d;left: -.3rem;top: 0}
+
+.part-four{background: #fff;padding-bottom: .2rem;}
+.part-four img{margin-top: .2rem;}
+
+.dline{position: absolute;top: -2.6rem;}
+
+.wx{background: #1e1f1e;text-align: center;padding: .55rem 0 .45rem}
+.wx img{width: 27%;display: inline-block;margin: 0 .15rem .2rem;}
+.wx img.logo{padding-bottom: .6rem;}
+.wx img.wx-img{width: 23%}
+.wx p,.other p{text-align: left;padding-left: 2rem;font-size: .34375rem;color: #fff;line-height: 1.6}
+.wx span,.other a{color: #F9FC05}
+
+.other{padding: .45rem 0 .45rem 1rem;background: #0D1716;line-height: 2;}
+.other h4{font-size: .375rem;color: #F98E03;font-weight: bold;}
+.other p{padding-left: 0;line-height: 2}
+
+.footer-nav{position: fixed;bottom: 0;left:0;right: 0;margin: auto;max-width: 920px;background:-webkit-linear-gradient(top, #1d1d1d 0%,#000 100%);height: 2.1875rem ; line-height: 1.2;z-index: 999;}
+.footer-nav a{width: 33.33333%;padding-top: .4rem;}
+.footer-nav i{width: .8rem;height: .8rem;background-size: contain;background-repeat: no-repeat;display: inline-block;}
+.icon-wx{background-image: url(../images/online.png)}
+.icon-tel{background-image: url(../images/tel.png)}
+.icon-home{background-image: url(../images/home.png)}
+.footer-nav span{display: block;}
+
+.mark{width: 100%;left: 0;right: 0;top: 0;bottom: 0;position: fixed;background: rgba(0,0,0,.4);z-index: 9998;display: none;}
+.wx-box{width: 4.4rem;position: fixed;top:25%;left: 0;right: 0;margin: auto;padding: .4rem;background: #fff;display: none;z-index: 9999;}
+.wx-box img{width: 100%;margin-bottom: .3rem;}
+.wx-box p{font-size: .36rem;text-align: center;line-height: 1.5}
+.wx-box span{color: #537cfb;}
