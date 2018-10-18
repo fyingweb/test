@@ -39,7 +39,7 @@ nav a{width: 25%;display: inline-block;font-size: .375rem;}
 
 .two-match dl{padding: .3rem}
 .two-match dd{line-height: 2;font-size: .34375rem;position: relative;text-indent: .3rem}
-.two-match dd:after{content: "•";display: block;position: absolute;color: #fffa1d;left: -.35rem;top: -.05rem;font-size: .4rem}
+.two-match dd:after{content: "•";display: block;position: absolute;color: #fffa1d;left: -.3rem;top: -.06rem;font-size: .4rem}
 
 .part-four{background: #fff;padding-bottom: .2rem;}
 .part-four img{margin-top: .2rem;}
