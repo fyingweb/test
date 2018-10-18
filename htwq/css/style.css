@@ -37,6 +37,7 @@ nav a{width: 25%;display: inline-block;font-size: .375rem;}
 .part-two{background: #223231;padding-bottom: .2rem;}
 .match-img img,.part-three img{margin-bottom: .5rem;}
 
+.two-match{background: #1E1E1E}
 .two-match dl{padding: .3rem}
 .two-match dd{line-height: 2;font-size: .34375rem;position: relative;text-indent: .3rem}
 .two-match dd:after{content: "•";display: block;position: absolute;color: #fffa1d;left: -.3rem;top: -.06rem;font-size: .4rem}
@@ -46,7 +47,7 @@ nav a{width: 25%;display: inline-block;font-size: .375rem;}
 
 .dline{position: absolute;top: -2.6rem;}
 
-.wx{background: #1e1f1e;text-align: center;padding: .55rem 0 .45rem}
+.wx{background: #1e1e1e;text-align: center;padding: .55rem 0 .45rem}
 .wx img{width: 27%;display: inline-block;margin: 0 .15rem .2rem;}
 .wx img.logo{padding-bottom: .6rem;}
 .wx img.wx-img{width: 23%}
