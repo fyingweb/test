@@ -14,7 +14,7 @@ i{ font-style: normal; }
 header{position:fixed;top:0;left:0;right:0;margin: auto;max-width:920px;background: #0d1716;z-index: 999;}
 .head{padding: .2rem;}
 .head img{height: 1rem;display: inline-block;}
-.head p{font-size: .3rem;color: #fff;line-height: 1.1rem;height: 1rem;text-align: right;float: right;padding-right: .2rem;}
+.head p{font-size: .3rem;color: #fff;line-height: 1.2rem;height: 1rem;text-align: right;float: right;padding-right: .2rem;}
 .head p span{color: #f8fb04;padding-left: .1rem;}
 nav{font-size: 0;height: 1.18rem;background: #0f3936;text-align: center;line-height: 1.2rem;}
 nav a{width: 25%;display: inline-block;font-size: .375rem;}
