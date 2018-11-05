@@ -15,7 +15,7 @@ header{position:fixed;top:0;left:0;right:0;margin: auto;max-width:920px;backgrou
 .head{padding: .2rem;position: relative;}
 .head img{height: 1.56rem;display: inline-block;padding: .05rem;vertical-align: middle;}
 .head-r{text-align: center;position: absolute;top: .2rem;right: .2rem}
-.r-top{font-size: .25rem;color: #fff;line-height: .6rem;height: .6rem;text-align: right;padding-left:.2rem;background: #b76605;border-radius: .6rem;overflow: hidden;margin-bottom: .12rem;}
+.r-top{font-size: .25rem;color: #fff;line-height: .6rem;height: .6rem;text-align: right;padding-left:.2rem;background: #b76605;border-radius: .6rem;overflow: hidden;margin-bottom: .8em;}
 .r-top span{color: #f8fb04;padding-left: .1rem;padding-right:.2rem;background: #624922;display: inline-block;border-radius: 0 .6rem .6rem 0;height: 100%;}
 .r-top em{color: #f90707;font-weight: bold;}
 .r-bot{height: .8rem;font-size: .4375rem;background: #f1ee1e;border-radius: .3rem;line-height: .8rem;width: 5.4rem;display: inline-block;color: #61481f;font-weight: bold;box-shadow: 0 0 .1rem .06rem #cbcbcb;overflow: hidden;}
@@ -58,7 +58,7 @@ nav a{width: 25%;display: inline-block;font-size: .375rem;}
 
 .wx{background: #2C2A2A;text-align: center;padding: .7rem 0 .45rem}
 .wx img{width: 27%;display: inline-block;}
-.wx img.logo{padding: .5rem .7rem;background: #FCF1D5;margin-right: -.4rem;vertical-align: .18rem;width: 24%}
+.wx img.logo{padding: .5rem .7rem;background: #FCF1D5;margin-right: -.5rem;vertical-align: .18rem;width: 24%}
 .wx p,.other p{text-align: left;padding-left: 1.8rem;font-size: .34375rem;color: #fff;line-height: 1.6}
 .wx span,.other a{color: #F9FC05}
 
