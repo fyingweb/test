@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>注册_多宝贷</title>
+    <meta name="keywords" content="多宝贷_安全可靠的投资理财网站_P2P个人理财平台" />
+    <meta name="description" content="多宝贷是一家专业可靠的互联网金融服务平台 ,专注为P2P网贷投资和借款用户提供优质的互联网信息中介服务，为投资人带来更大的收益,多宝贷让闲钱更有价值。" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <script type="text/javascript" src="js/flexible.min.js"></script>
+    <link rel="stylesheet" href="css/login-register.054bf8d4.css">
+</head>
+<body>
+<div class="register-wrap">
+    <a href="javascript:;"><img class="dbd-logo" src="images/dbd-logo.png" alt="多宝贷logo"></a>
+    <form action="javascript:;" id="reg-form">
+        <div class="form-last-step">
+            <input type="hidden" id="csrf">
+            <div class="form-group">
+                <i class="phone-icon gruop-icon"></i>
+                <input type="tel" class="phone-num" id="phone" name="phone" placeholder="请输入手机号码" maxlength="11" value="" autocomplete="off">
+                <i class="close-icon gruop-icon"></i>
+            </div>
+            <div class="form-group">
+                <i class="img-captcha-icon gruop-icon"></i>
+                <input type="tel" id="imgCaptcha" placeholder="请输入右侧验证码" maxlength="4">
+                <img src="https://www.duobaodai.com/yanzheng/index.html" id="imgCode" onclick='document.getElementById("imgCode").src = "https://www.duobaodai.com/yanzheng/index/?" + Math.random();'/>
+            </div>
+            <div class="form-group">
+                <i class="referee-icon gruop-icon"></i>
+                <input type="tel" id="refereePhone" class="phone-num" name="referee" placeholder="请输入推荐人手机号（选填）" maxlength="11" value="">
+                <i class="close-icon gruop-icon"></i>
+            </div>
+            <p class="last-step-error error-message"></p>
+            <input type="hidden" name="agr" value="1">
+            <button class="submit-btn next-btn" type="button">下一步</button>
+            <p class="contract">点击上面“下一步”按钮，表示您同意<br/><a href="/site/Serviceknow.html">《服务协议》</a></p>
+        </div>
+        <div class="form-next-step hide">
+            <div class="form-group">
+                <i class="dx-icon gruop-icon"></i>
+                <input type="tel" id="smsCaptcha" name="smscode" placeholder="请输入短信验证码" maxlength="6">
+                <button class="get-sms-captcha-btn" type="button">获取验证码</button>
+            </div>
+            <button class="get-voice-captcha-btn" type="button">收不到验证码？语音获取验证码</button>
+            <div class="form-group">
+                <i class="password-icon gruop-icon"></i>
+                <input type="password" id="password" name="password" placeholder="密码为6位以上数字、字母组成" class="password" maxlength="18">
+                <i class="eye-icon gruop-icon"></i>
+            </div>
+            <p class="next-step-error error-message"></p>
+            <button class="submit-btn confirm-btn" type="submit">确认注册</button>
+            <div class="back">
+                <a href="javascript:;">< 返回上一步</a>
+            </div>
+        </div>
+        <div class="entrance">
+            <a href="login.html">已有账号，去登录 ></a>
+        </div>
+    </form>
+</div>
+<script src="https://libs.baidu.com/jquery/1.10.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/login-register.js"></script>
+</body>
+</html>
